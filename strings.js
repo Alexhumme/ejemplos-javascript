@@ -1,4 +1,4 @@
-console.log("Strings");
+console.log("**********Strings**********");
 
 let texto = "puta Cinco palabras uno dos 8 tres cinco";
 

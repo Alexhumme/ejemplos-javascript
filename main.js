@@ -1,4 +1,4 @@
-console.log("erda primo jajaja")
+console.log("***********erda primo jajaja*************")
 
 // SCOPE
 

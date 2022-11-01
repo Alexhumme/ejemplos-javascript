@@ -1,4 +1,4 @@
-// Funciones
+console.log("*********fuciones***************")
 // HACER UNA FUNCION QUE SUME 10 +10
 
 function sumar1(){ //Mi solucion
@@ -22,11 +22,12 @@ console.log(resta_numeros(8, 2));
 
 // Funciones flecha
 
-const saludar  = (nombre = "Alex", apellido = false) => {
-    let saludo = "Hola "+nombre;
-    apellido ? saludo += apellido : true;
+const saludar  = (nombre = "Alex", segNombre = "",apellido = "") => {
+    let saludo = "Hola "+nombre+" - "+segNombre+" - "+apellido;
+    !apellido ? saludo += ". Esta persona no tiene apellido" : true;
     console.log(saludo);
     return saludo;
 }
 
-saludar()+" wayaba"
+saludar("Juan", apellido="jose");
+
