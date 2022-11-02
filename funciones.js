@@ -31,3 +31,24 @@ const saludar  = (nombre = "Alex", segNombre = "",apellido = "") => {
 
 saludar("Juan", apellido="jose");
 
+/*++++++++++++++++ */
+
+function funcion_que_devuelve_5_nombres_y_saluda_si_empiezan_por_ma(nombres){
+    for (let e of nombres){ 
+        console.log(`${e}  ${(e.startsWith("MA")) ? "hola!" : "" }`) 
+    }
+}
+
+funcion_que_devuelve_5_nombres_y_saluda_si_empiezan_por_ma(["JUAN","PEDRO","MARIA","DAVID","MARTA","MARCO","IAN"]);
+
+/*version del profe*/
+
+function funcion_que_devuelve_5_nombres_y_saluda_si_empiezan_por_ma_versio_del_profe(nombres){
+    nombres.forEach(nombre => {
+        console.log("nombre : "+nombre);
+        (nombre.startsWith("MA")) ? "hola!" : "" 
+        console.log("tu nombre empieza por MA" + nombre)
+    });
+}
+
+funcion_que_devuelve_5_nombres_y_saluda_si_empiezan_por_ma_versio_del_profe(["JUAN","PEDRO","MARIA","DAVID","MARTA","MARCO","IAN"]);
