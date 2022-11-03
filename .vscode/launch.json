@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch OperacionesApp",
+            "request": "launch",
+            "mainClass": "OperacionesApp",
+            "projectName": "proyecto_prueba_c5f41506"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
